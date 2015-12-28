@@ -1,0 +1,28 @@
+/*
+* @description: right sidebar style
+* @author: glx
+* @update: V.0.0.1 (2015-12-28 10:45)
+*/
+
+.sidebar {
+  position: fixed;
+  right:15px;
+  top:185px;
+  border:1px solid #aaaeb0;
+  background-color: $white;
+  .sidebar-tool {
+    padding: 13px 15px;
+    font-size:20px;
+    border:1px solid #aaaeb0;
+    cursor: pointer;
+    &:hover{
+      background-color: $red;
+      color:$white;
+
+    }
+  }
+}
+
+
+
+

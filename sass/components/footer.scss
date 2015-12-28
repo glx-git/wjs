@@ -1,0 +1,86 @@
+/*
+* @description: style for footer style
+* @author: hfq
+* @update: V.0.0.1 (2015-12-25 14:58)
+*/
+//style for footer
+footer{
+  background-color: $gray-darkest;
+  padding-top: $padding-base-vertical * 3.4;
+  color:$gray-light;
+  font-size: $font13;
+}
+.footer-link{
+  .col-lg-6{
+    dl{
+      width: 33%;
+      float: $float-l;
+    }
+  }
+  dl{
+    padding: 3px 0;
+    overflow: hidden;;
+  }
+  dd a{
+    color:$gray-light;
+    display: block;
+    line-height: $line-height-height;
+    font-size: $font15;
+  }
+  dl.text-left dd{
+    line-height: $line-height-normal ;
+    font-size: $font13;
+    em{
+      width: 33px;
+      height: 33px;
+      line-height: $line-height-base * 1.6;
+      float: $float-l;
+      margin:25px 10px 0 0;
+      background-color: $gray-dark;
+      border-radius: $border-radius-largest;
+    }
+  }
+  dt{
+    color:$white;
+    font-weight: normal;
+    font-size: $font20;
+    padding-bottom: $padding-base-vertical * 2.6;
+    i{
+      position: relative;
+      right: 0;
+      vertical-align: middle;
+      font-size: $font12;
+    }
+    cite{
+      float: $float-l;
+    }
+  }
+  .footer-link{
+    width: 120%;
+  }
+  .footer-link em{
+    width:69px;
+    height: 69px;
+    float: $float-l;
+    margin: 0 13px 13px 0;
+    background-color: $gray-light;
+    border-radius: $border-radius-large;
+  }
+}
+.footer-copy{
+  padding: $padding-base-vertical * 2 0 0 0;
+  border-top:1px dashed $gray-darker;
+  font-size: $font12;
+  .footer-nav a{
+    color:$gray-light;
+    padding-right: $padding-base-vertical * 1.7;
+  }
+  .footer-nav a.footer-login{
+    padding-right:0;
+  }
+  .footer-safe-img img{
+    margin-right:16px;
+    width: 110px;
+    padding-bottom: $padding-base-vertical * 2.2;
+  }
+}

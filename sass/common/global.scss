@@ -1,0 +1,21 @@
+/*
+* @description: Web site overall style
+* @author: guolixin
+* @update: V.0.0.1 (2015-12-23 18:32)
+*/
+
+//common css
+@import "../components/variables";
+@import "../common/common";
+
+// Components  css
+
+@import "../components/nav";
+@import "../components/footer";
+@import "../components/tips";
+@import "../components/sidebar";
+
+//pages css
+@import "../pages/index";
+@import "../pages/user-center";
+@import "../pages/pie-chart";

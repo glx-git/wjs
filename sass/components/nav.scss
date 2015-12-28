@@ -1,0 +1,127 @@
+/*
+* @description: navigator style
+* @author: glx
+* @update: V.0.0.1 (2015-12-25 10:45)
+*/
+
+
+header {
+  color: $gray-darkest;
+}
+header a{
+    &,
+    &:hover {
+    color: $gray-darkest;
+  }
+}
+.top-nav {
+  & {
+    border-bottom: 1px solid $gray-light;
+    height: 40px;
+  }
+  .nav > li > a {
+    padding: $padding-base-vertical 0;
+    font-size: $font14;
+    color: $gray-darkest;
+  }
+  .glyphicon {
+    top: 2px;
+    margin-right: 5px;
+  }
+  .top-nav-pipe {
+    height:40px;
+    padding: 0 $padding-base-horizontal;
+    line-height:40px;
+    color: $gray-lighter;
+  }
+}
+.navbar {
+  & {
+    height:106px;
+    /*line-height: 106px;*/
+    margin-bottom:0;
+    padding-top:30px;
+    font-size: $font18;
+  }
+  .collapse.navbar-collapse {
+    /*height:106px!important;*/
+    /*line-height: 106px;*/
+    a{
+      background-color:transparent;
+      &:hover {
+        border-bottom:2px solid $red;
+     }
+    }
+  }
+  .navbar-logo {
+    display: inline-block;
+    width:187px;
+    height:45px;
+    background-image: url('#{$icon-path}#{logo}.png');
+  }
+  .nav {
+    line-height:106px;
+  }
+  .dropdown-outer {
+    display: inline-block;
+  }
+  .avatar-outer {
+    margin-left:10px;
+  }
+  .avatar {
+    position: relative;
+  }
+  .avatar-img {
+    width:43px;
+    height:43px;
+    -webkit-border-radius:$border-radius-largest;
+    -moz-border-radius:$border-radius-largest;
+    border-radius:$border-radius-largest;
+  }
+  .mess-count {
+    position: absolute;
+    right:-4px;
+    top:-2px;
+    width:15px;
+    height:15px;
+    line-height: 15px;
+    -webkit-border-radius:$border-radius-largest;
+    -moz-border-radius:$border-radius-largest;
+    border-radius:$border-radius-largest;
+    background-color: $red;
+    color: $white;
+    font-size: $font-size-base * 0.9;
+    text-align: center;
+  }
+  .nav-search {
+    .form-group {
+      width:150px;
+      margin-top:5px;
+    }
+  }
+}
+.dropdown-menu {
+  display: block;
+  min-width:145px;
+  padding-top:0;
+  padding-bottom:0;
+}
+.nav-dropdown {
+  li {
+    border-bottom:1px solid #dfdfdf;
+    a {
+      padding:10px 20px;
+      border-bottom:0!important;
+      text-align: center;
+    }
+    a:hover {
+      color: $red;
+    }
+  }
+  li:hover {
+    background-color: #f2f2f2;
+  }
+}
+
+
+

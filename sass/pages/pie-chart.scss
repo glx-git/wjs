@@ -1,0 +1,123 @@
+/*
+* @description: style for footer pie chart
+* @author: hfq
+* @update: V.0.0.1 (2015-12-25 19:03)
+*/
+//style for pie chart
+$number:  182px;
+.pie-chart-container{
+  width: 90%;
+  padding-right: 80px;
+  border-right: 1px solid $gray-lightest;
+}
+.user-pie{
+  width: $number * 2.2;
+  margin: 0 auto;
+  margin-top: -$number/3.64;
+}
+.user-pie-box{
+  position: relative;
+  height: $number * 1.8;
+  margin: $number/7.28 auto;
+}
+.pie{
+  position: absolute;
+  width: $number;
+  height: $number;
+  transition: all 0.2s ease-in-out;
+}
+.pie-balance{
+  left:0;
+  background-color:#efb512;
+  border-radius:$number 0 0 0;
+  &:hover{
+    left:-3px;
+    top:-3px;
+  }
+}
+.pie-frozen{
+  left: $number + 3;
+  border-radius:0 $number 0 0;
+  background-color:#048be7;
+  &:hover{
+    left: $number + 6;
+    top:-3px;
+  }
+}
+.pie-payment{
+  left:0;
+  top:$number + 3 ;
+  background-color:$dark-blue;
+  border-radius:0 0 0 $number;
+  &:hover{
+    left: -3px;
+    top:$number + 6;
+  }
+}
+.pie-fund{
+  left: $number + 3;
+  top:$number + 3 ;
+  border-radius:0 0 $number 0;
+  background-color:$red;
+  &:hover{
+    left: $number +6;
+    top:$number +6 ;
+  }
+}
+.pie-number{
+  position: absolute;
+  top:$number/2;
+  left: $number/2;
+  width: $number;
+  height: $number;
+  background-color: $white;
+  border-radius: $border-radius-largest;
+  p{
+    height: $number / 2.6;
+    top:50%;
+    left: 50%;
+    margin-top: $number / 4.6;
+  }
+  table{
+    width: 100%;
+    margin:$number/3.3 0;
+    line-height: $line-height-height;
+    font-size: $font20;
+    i{
+      color:$gray-light;
+    }
+    b{
+      color: $red;
+      font-size: $font24;
+    }
+  }
+}
+.user-pie-show{
+  width: 100%;
+  font-size: $font18;
+  cite{
+    font-size: $font24;
+  }
+  i{
+    width: $number/10.7;
+    height: $number/10.7;
+    border-radius: $border-radius-largest;
+    vertical-align: top;
+    margin:$number / 50 0 0 $number / 20;
+  }
+  .pie-balance-show i{
+    background-color: #efb512;
+  }
+  .pie-frozen-show,.pie-fund-show{
+    float: $float-r;
+  }
+  .pie-payment-show i{
+    background-color:$dark-blue;
+  }
+  .pie-frozen-show i{
+    background-color: #048be7;
+  }
+  .pie-fund-show i{
+    background-color:$red;
+  }
+}

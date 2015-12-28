@@ -1,0 +1,50 @@
+/*
+* @description: style for side service style
+* @author: hfq
+* @update: V.0.0.1 (2015-12-23 17:58)
+*/
+$side-num: 10px;
+
+//
+.side-service{
+  position:fixed;
+  top: $side-num * 20;
+  right: $side-num * 1.5;
+  width: $side-num * 4.7;
+  background-color: $gray-light;
+  z-index: 99;
+  a{
+    width: $side-num * 4.7;
+    height:$side-num * 4.9;
+    font-size: $font24;
+    color: $gray-light;
+    line-height: $line-height-base * 1.5;
+    border:1px solid $gray-light;
+    border-top:none;
+    background-color: $white;
+    text-decoration: none;
+    transition: background 0.3s ease-out 0s;
+    &:hover{
+      color: $white;
+      background-color: $red;
+    }
+    span{
+      position:absolute;
+      left:-210px;
+      top:-125px;
+      opacity: 0;
+      transform: scale(0);
+      -webkit-transform: scale(0);
+      transform-origin: 100% 70%;
+      -webkit-transform-origin: 100% 70%;
+      transition: transform ease .3s, opacity ease .3s;
+      -webkit-transition: all ease .3s;
+      &:hover{
+        display: block;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        opacity: 1;
+      }
+    }
+  }
+}
