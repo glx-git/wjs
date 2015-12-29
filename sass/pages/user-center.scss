@@ -27,21 +27,6 @@ a,i,em,span,cite{ font-style: normal; display: inline-block;}
         border-radius: $border-radius-largest;
       }
     }
-    .progress{
-      height: 7px;
-      border-radius: $border-radius-large;
-      box-shadow: 0;
-      margin-bottom: 0;
-      .progress-high{
-        background-color: $gree;
-      }
-      .progress-nomal{
-        background-color: #efb512;
-      }
-      .progress-low{
-        background-color: $red;
-      }
-    }
   }
   .user-infor-column > div{ overflow: hidden;}
   .user-infor{

@@ -1,0 +1,30 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+.progress {
+  @include  progress-variant();
+  .progress-bar {
+    @include progress-bar-variant(#475b66);
+  }
+
+}
+.progress-high{
+  @include  progress-variant(7px);
+  .progress-bar {
+    @include progress-bar-variant($gree);
+  }
+}
+.progress-nomal{
+  @include  progress-variant(7px);
+  .progress-bar {
+    @include progress-bar-variant(#efb512);
+  }
+}
+.progress-low{
+  @include  progress-variant(7px);
+  .progress-bar {
+    @include progress-bar-variant($red);
+  }
+}

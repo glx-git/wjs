@@ -1,4 +1,4 @@
-<!doctype>
+<!DOCTYPE html>
  <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -8,6 +8,40 @@
     <link href="../../css/global.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<div class="side-nav clearfix text-center">
+    <div class="user-infor-column">
+        <a href="user-center.html" class="user-photo"><img src="../../img/banner1.jpg"/></a>
+        <p>Ginoeyes</p>
+        <p><a href="#">退出</a> </p>
+    </div>
+    <ul class="nav navbar-nav">
+        <li>
+            <a href="javascript:;"><i class="glyphicon glyphicon-user"></i>我要理财</a>
+        </li>
+        <li class="active">
+            <a href="javascript:;"><i class="glyphicon glyphicon-user"></i>我要借款</a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="glyphicon glyphicon-user"></i>最新动态</a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="glyphicon glyphicon-user"></i>帮助中心</a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="glyphicon glyphicon-user"></i>理财学院</a>
+        </li>
+        <li class="dropdown nav-dropdown">
+            <a href="javascript:;"><i class="glyphicon glyphicon-user"></i>关于我们</a>
+            <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+            <!--<li><a href="#">公司介绍</a></li>-->
+            <!--<li><a href="#">管理团队</a></li>-->
+            <!--<li><a href="#">合作伙伴</a></li>-->
+            <!--<li><a href="#">招贤纳士</a></li>-->
+            <!--<li><a href="#">联系我们</a></li>-->
+            <!--</ul>-->
+        </li>
+    </ul>
+</div>
 <div>
     <header>
         <div class="top-nav">
@@ -42,18 +76,24 @@
                 </nav>
             </div>
         </div>
-        <div role="banner" class="navbar navbar-static-top bs-docs-nav">
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
             <div class="container">
-                <div class="navbar-header">
-                    <button aria-expanded="false" aria-controls="bs-navbar" data-target="#bs-navbar" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                <div class="navbar-header text-center">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-logo"  href="javascript:;"></a>
+                    <a class="navbar-logo navbar-brand"  href="javascript:;"></a>
+                    <a class="avatar avatar-sm">
+                        <img class="avatar-img" src="../../img/avatar.jpg">
+                        <em class="mess-count">3</em>
+                    </a>
                 </div>
-                <nav class="collapse navbar-collapse" id="bs-navbar">
+                <div id="bs-navbar" class="navbar-collapse collapse">
+                    <a class="navbar-logo navbar-brand float-l"  href="javascript:;"></a>
                     <ul class="nav navbar-nav">
                         <li>
                             <a href="javascript:;">我要理财</a>
@@ -100,7 +140,6 @@
                         <li><a href="javascript:;">我的账户</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-
                         <li class="nav-search">
                             <div class="form-group has-feedback">
                                 <input type="text" class="form-control">
@@ -109,9 +148,9 @@
                             </div>
                         </li>
                     </ul>
-                </nav>
-            </div>
-        </div>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
     </header>
     <div class="content">
         <section>
@@ -200,7 +239,7 @@
                                     <div class="static-type">累计成交额</div>
                                     <div class="static-number">4,208,343,503</div>
                                 </li>
-                                <li class="static-items text-r">
+                                <li class="static-items text-right">
                                     <div class="static-type">累计成交额</div>
                                     <div class="static-number">4,203</div>
                                 </li>
@@ -208,7 +247,7 @@
                                     <div class="static-type">累计成交额</div>
                                     <div class="static-number">4,208,343,503</div>
                                 </li>
-                                <li class="static-items text-r">
+                                <li class="static-items text-right">
                                     <div class="static-type">累计成交额</div>
                                     <div class="static-number">5,343,503</div>
                                 </li>
@@ -220,11 +259,14 @@
             <div>
                 <div class="container">
                     <div class="col-lg-15 bids-order">
-                        <a class="float-r" href="javascript:;"><span class="glyphicon glyphicon-search"></span>微金所企业宣传片</a>
+                        <a class="float-r video-link" href="javascript:;"><span class="glyphicon glyphicon-search"></span>微金所企业宣传片</a>
                         <div class="order-outer">
                             <span class="glyphicon glyphicon-search"></span>
-                            现在有<em class="stress-text">285</em>人在排队，累计预约交易成功 <em class="stress-text">1029</em> 次。什么是预约投标？
-                            <a class="stress-text" href="javascript:;">立即预约</a>
+                            现在有<em class="stress-text">285</em>人在排队，累计预约交易成功 <em class="stress-text">1029</em> 次。
+                            <span class="order-mean">
+                                什么是预约投标？
+                                <a class="stress-text" href="javascript:;">立即预约</a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -233,24 +275,24 @@
         <section class="bg-gray">
             <div class="container">
                 <div class="project-list-header  margin-t30 clearfix">
-                    <div  class="float-r"><span class="glyphicon glyphicon-search"></span>市场有风险 投资需谨慎</div>
+                    <div  class="float-r invest-notice"><span class="glyphicon glyphicon-search"></span>市场有风险 投资需谨慎</div>
                     <ul class="project-list-items clearfix">
                         <li class="project-list-item"><a href="javascript:;">安全评级<span class="caret caret-top"></span></a></li>
                         <li class="top-nav-pipe">|</li>
-                        <li class="project-list-item"><a href="javascript:;">年化利率<span class="caret caret-top"></span></a></li>
+                        <li class="project-list-item"><a href="javascript:;"><span class="simple-text">年化</span>利率<span class="caret caret-top"></span></a></li>
                         <li class="top-nav-pipe">|</li>
-                        <li class="project-list-item"><a href="javascript:;">投资期限<span class="caret caret-top"></span></a></li>
+                        <li class="project-list-item"><a href="javascript:;"><span class="simple-text">投资</span>期限<span class="caret caret-top"></span></a></li>
                         <li class="top-nav-pipe">|</li>
-                        <li class="project-list-item"><a href="javascript:;">项目进度<span class="caret caret-top"></span></a></li>
-                        <li class="top-nav-pipe">|</li>
-                        <li class="project-list-item"><a href="javascript:;">高级筛选<span class="caret caret-top"></span></a></li>
+                        <li class="project-list-item"><a href="javascript:;"><span class="simple-text">项目</span>进度<span class="caret caret-top"></span></a></li>
+                        <li class="top-nav-pipe simple-text">|</li>
+                        <li class="project-list-item simple-text"><a href="javascript:;">高级筛选<span class="caret caret-top"></span></a></li>
                     </ul>
                 </div>
                 <div class="product-lists-content">
                     <ul class="row product-lists">
-                        <li class="col-lg-5 product-item-outer">
+                        <li class="col-lg-5 col-sm-7 col-xs-15 product-item-outer">
                             <div class="product-item product-item-red clearfix">
-                                <div class="col-lg-11">
+                                <div class="col-lg-11 col-sm-11 col-xs-11">
                                     <div class="">
                                         <div class="product-item-name">新手体验标</div>
                                         <div class="">
@@ -265,7 +307,7 @@
                                                         <div class="amount-count">10<em>元</em></div>
                                                     </li>
                                                 </ul>
-                                                <ul class="deuce float-l text-r">
+                                                <ul class="deuce float-l text-right">
                                                     <li>
                                                         <p class="pdt-type-title">起投金额（元）</p>
                                                         <div class="amount-count">10<em>元</em></div>
@@ -281,7 +323,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div  class="col-lg-4 rate-profit">
+                                <div  class="col-lg-4 col-sm-4 col-xs-4 rate-profit">
                                     <div class="tex-like-icon">
                                         <span class="icon-text-bao">宝</span>
                                         <span class="icon-text-fu">复</span>
@@ -291,9 +333,9 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="col-lg-5 product-item-outer">
+                        <li class="col-lg-5 col-sm-7 col-xs-15 product-item-outer">
                             <div class="product-item clearfix">
-                                <div class="col-lg-11">
+                                <div class="col-lg-11 col-sm-11 col-xs-11">
                                     <div class="">
                                         <div class="product-item-name">新手体验标</div>
                                         <div class="">
@@ -308,7 +350,7 @@
                                                         <div class="amount-count">10<em>元</em></div>
                                                     </li>
                                                 </ul>
-                                                <ul class="deuce float-l text-r">
+                                                <ul class="deuce float-l text-right">
                                                     <li>
                                                         <p class="pdt-type-title">担保等级</p>
                                                         <div class="amount-count">★★★★★<span class="star-gray">★</span></div>
@@ -329,7 +371,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div  class="col-lg-4 rate-profit">
+                                <div  class="col-lg-4 col-sm-4 col-xs-4 rate-profit">
                                     <div class="tex-like-icon">
                                         <span class="icon-text-bao">宝</span>
                                         <span class="icon-text-fu">复</span>
@@ -339,135 +381,9 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="col-lg-5 product-item-outer">
-                            <div class="product-item clearfix">
-                                <div class="col-lg-11">
-                                    <div class="">
-                                        <div class="product-item-name">新手体验标</div>
-                                        <div class="">
-                                            <div  class="">
-                                                <ul class="deuce float-l">
-                                                    <li>
-                                                        <p class="pdt-type-title">起投金额（元）</p>
-                                                        <div class="amount-count">10<em>元</em></div>
-                                                    </li>
-                                                    <li>
-                                                        <p class="pdt-type-title">起投金额（元）</p>
-                                                        <div class="amount-count">10<em>元</em></div>
-                                                    </li>
-                                                </ul>
-                                                <ul class="deuce float-l text-r">
-                                                    <li>
-                                                        <p class="pdt-type-title">起投金额（元）</p>
-                                                        <div class="amount-count">10<em>元</em></div>
-                                                    </li>
-                                                    <li>
-                                                        <p class="pdt-type-title">起投金额（元）</p>
-                                                        <div class="amount-count">10<em>元</em></div>
-                                                    </li>
-                                                </ul>
-                                                <div class="repayment"> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div  class="col-lg-4 rate-profit">
-                                    <div class="tex-like-icon">
-                                        <span class="icon-text-bao">宝</span>
-                                        <span class="icon-text-fu">复</span>
-                                    </div>
-                                    <div class="profit-per"><em>10</em>%</div>
-                                    <div class="rate-word">年利率</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-lg-5 product-item-outer">
-                            <div class="product-item clearfix">
-                                <div class="col-lg-11">
-                                    <div class="">
-                                        <div class="product-item-name">新手体验标</div>
-                                        <div class="">
-                                            <div  class="">
-                                                <ul class="deuce float-l">
-                                                    <li>
-                                                        <p class="pdt-type-title">起投金额（元）</p>
-                                                        <div class="amount-count">10<em>元</em></div>
-                                                    </li>
-                                                    <li>
-                                                        <p class="pdt-type-title">起投金额（元）</p>
-                                                        <div class="amount-count">10<em>元</em></div>
-                                                    </li>
-                                                </ul>
-                                                <ul class="deuce float-l text-r">
-                                                    <li>
-                                                        <p class="pdt-type-title">起投金额（元）</p>
-                                                        <div class="amount-count">10<em>元</em></div>
-                                                    </li>
-                                                    <li>
-                                                        <p class="pdt-type-title">起投金额（元）</p>
-                                                        <div class="amount-count">10<em>元</em></div>
-                                                    </li>
-                                                </ul>
-                                                <div class="repayment"> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div  class="col-lg-4 rate-profit">
-                                    <div class="tex-like-icon">
-                                        <span class="icon-text-bao">宝</span>
-                                        <span class="icon-text-fu">复</span>
-                                    </div>
-                                    <div class="profit-per"><em>10</em>%</div>
-                                    <div class="rate-word">年利率</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-lg-5 product-item-outer">
-                            <div class="product-item clearfix">
-                                <div class="col-lg-11">
-                                    <div class="">
-                                        <div class="product-item-name">新手体验标</div>
-                                        <div class="">
-                                            <div  class="">
-                                                <ul class="deuce float-l">
-                                                    <li>
-                                                        <p class="pdt-type-title">起投金额（元）</p>
-                                                        <div class="amount-count">10<em>元</em></div>
-                                                    </li>
-                                                    <li>
-                                                        <p class="pdt-type-title">起投金额（元）</p>
-                                                        <div class="amount-count">10<em>元</em></div>
-                                                    </li>
-                                                </ul>
-                                                <ul class="deuce float-l text-r">
-                                                    <li>
-                                                        <p class="pdt-type-title">起投金额（元）</p>
-                                                        <div class="amount-count">10<em>元</em></div>
-                                                    </li>
-                                                    <li>
-                                                        <p class="pdt-type-title">起投金额（元）</p>
-                                                        <div class="amount-count">10<em>元</em></div>
-                                                    </li>
-                                                </ul>
-                                                <div class="repayment"> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div  class="col-lg-4 rate-profit">
-                                    <div class="tex-like-icon">
-                                        <span class="icon-text-bao">宝</span>
-                                        <span class="icon-text-fu">复</span>
-                                    </div>
-                                    <div class="profit-per"><em>10</em>%</div>
-                                    <div class="rate-word">年利率</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-lg-5 product-item-outer">
+                        <li class="col-lg-5 col-sm-7 col-xs-15 product-item-outer">
                             <div class="product-item product-item-gray clearfix">
-                                <div class="col-lg-11">
+                                <div class="col-lg-11 col-sm-11 col-xs-11">
                                     <div class="">
                                         <div class="product-item-name">新手体验标</div>
                                         <div class="">
@@ -482,7 +398,7 @@
                                                         <div class="amount-count">10<em>元</em></div>
                                                     </li>
                                                 </ul>
-                                                <ul class="deuce float-l text-r">
+                                                <ul class="deuce float-l text-right">
                                                     <li>
                                                         <p class="pdt-type-title">起投金额（元）</p>
                                                         <div class="amount-count">10<em>元</em></div>
@@ -497,7 +413,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div  class="col-lg-4 rate-profit">
+                                <div  class="col-lg-4 col-sm-4 col-xs-4 rate-profit">
                                     <div class="tex-like-icon">
                                         <span class="icon-text-bao">宝</span>
                                         <span class="icon-text-fu">复</span>
@@ -541,24 +457,88 @@
         </section>
     </div>
     <footer>
-
-    </footer>
-    <!--<div class="sidebar">
-        <ul>
-            <li class="sidebar-tool">
-                <span aria-hidden="true" class="glyphicon glyphicon-search"></span>
-            </li>
-            <li class="sidebar-tool">
-                <span aria-hidden="true" class="glyphicon glyphicon-search"></span>
-            </li>
-        </ul>
-        <div class="tooltip top" role="tooltip">
-            <div class="tooltip-arrow"></div>
-            <div class="tooltip-inner">
-                Some tooltip text!
+        <div class="container footer-link">
+            <dl class="col-lg-5 text-left clearfix">
+                <dt><a href="index.htm"><img src="../../img/footer-logo.png"></a> </dt>
+                <dd>
+                    微金所的信念：<br/>
+                    坚持交易所模式，服务小微大众, 不贪大，不比高，<br/>
+                    守得住底线，耐得住寂寞，坚持住理想，<br/>
+                    在鱼龙混杂之初，幸有大浪淘沙去伪存真时，<br/>
+                    微金所屹立，终将成就亿万人的信用价值！
+                </dd>
+                <dd class="text-center">
+                    <em class="glyphicon glyphicon-user"></em>
+                    <em><img src=""></em>
+                    <em><img src=""></em>
+                    <em><img src=""></em>
+                </dd>
+            </dl>
+            <dl class="col-lg-2 clearfix">
+                <dt>关于我们</dt>
+                <dd>
+                    <a href="#">公司介绍</a>
+                    <a href="#">管理团队</a>
+                    <a href="#">合作伙伴</a>
+                    <a href="#">招贤纳士</a>
+                    <a href="#">联系我们</a>
+                </dd>
+            </dl>
+            <dl class="col-lg-2 clearfix">
+                <dt>最新动态</dt>
+                <dd>
+                    <a href="#">媒体报道</a>
+                    <a href="#">公司动态</a>
+                    <a href="#">利率报告</a>
+                    <a href="#">更新历史</a>
+                </dd>
+            </dl>
+            <dl class="col-lg-2 clearfix">
+                <dt>帮助中心</dt>
+                <dd>
+                    <a href="#">新手指引</a>
+                    <a href="#">安全保障</a>
+                    <a href="#">操作指南</a>
+                    <a href="#">VIP投资人</a>
+                </dd>
+            </dl>
+            <dl class="col-lg-4 clearfix">
+                <dt class="text-right"><cite>合作伙伴</cite><i>免费热线4006-89-4006</i></dt>
+                <dd class="footer-link">
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                </dd>
+            </dl>
+        </div>
+        <div class="container footer-copy">
+            <div class="footer-nav col-lg-5">
+                <p>
+                    <a href="#">我要理财</a>
+                    <a href="#">我要借款</a>
+                    <a href="#">忘记密码</a>
+                    <a href="#">如何提现</a>
+                    <a href="#" class="footer-login">登录</a>
+                    <i>/</i>
+                    <a href="#">注册</a>
+                </p>
+                <p>©版权所有 ©中微（北京）信用管理有限公司 京ICP证 12013158号</p>
+            </div>
+            <div class="col-lg-10 footer-safe-img">
+                <em><img src="../../img/img_03.jpg"></em>
+                <em><img src="../../img/img_05.jpg"></em>
+                <em><img src="../../img/img_07.jpg"></em>
+                <em><img src="../../img/img_09.jpg"></em>
+                <em><img src="../../img/img_11.jpg"></em>
+                <em><img src="../../img/img_13.jpg"></em>
             </div>
         </div>
-    </div>-->
+    </footer>
 </div>
 
 </body>

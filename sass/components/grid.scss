@@ -1,0 +1,17 @@
+/*
+* @description: style for grid style
+* @author: glx
+* @update: V.0.0.1 (2015-12-29 14:58)
+*/
+
+//style for grid
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@include make-grid-columns;
+
+@media (min-width: $screen-md-min) {
+  @include make-grid(md);
+}

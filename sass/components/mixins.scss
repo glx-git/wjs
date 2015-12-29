@@ -1,9 +1,23 @@
 /*
 * @description: Mixins
 * @author: glx
-* @update: V.0.0.1 (2015-12-25 10:00)
+* @update: V.0.0.1 (2015-12-29 10:00)
 */
 
 // Utilities
-//@import "mixins/hide-text";
+@import "mixins/size";
+@import "mixins/text-emphasis";
+@import "mixins/text-overflow";
+@import "mixins/vendor-prefixes";
+
+// Components
+@import "mixins/buttons";
+@import "mixins/progress-bar";
+@import "mixins/grid";
+
+// Skins
+@import "mixins/border-radius";
+/*@import "mixins/gradients";*/
+
+// Layout
 

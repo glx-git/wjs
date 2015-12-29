@@ -8,213 +8,376 @@
     <title>Title</title>
 </head>
 <body>
-<div class="container">
-    <div class="row user-infor-column">
-        <div class="col-lg-6 user-photo-bar clearfix">
-            <span class="user-photo"><img src="../../img/banner1.jpg"/></span>
-            <ul class="user-infor">
-                <li class="user-name"><i>Ginoeyes</i><i class="glyphicon glyphicon-heart-empty"></i></li>
-                <li class="user-icon row">
-                    <a class="col-lg-3 glyphicon glyphicon-user tooltip" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="实名认证"></a>
-                    <div class="tooltip top" role="tooltip">
-                        <div class="tooltip-arrow"></div>
-                        <div class="tooltip-inner">
-                            Some tooltip text!
-                        </div>
-                    </div>
-                    <a class="col-lg-3 glyphicon glyphicon-user" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="绑定手机"></a>
-                    <a class="col-lg-3 glyphicon glyphicon-user" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="绑定邮箱"></a>
-                    <a class="col-lg-3 glyphicon glyphicon-user" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="提现密码"></a>
-                    <a class="col-lg-3 glyphicon glyphicon-user" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="绑定银行卡"></a>
-
-                </li>
-                <li class="user-safe-levels">
-                    <div class="progress">
-                        <div class="progress-bar progress-high" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                            <span class="sr-only">60% Complete</span>
-                        </div>
-                    </div>
-                    <span class="progress-bar-info"><em>安全等级：</em><i class="levels-high">强</i></span>
-                </li>
-            </ul>
-        </div>
-        <div class="col-lg-3 user-account text-center income-num clearfix"><p>累计收益</p><p>100000.00</p></div>
-        <div class="col-lg-3 user-account text-center balance-num clearfix"><p>可用余额</p><p>3000.00</p></div>
-        <div class="col-lg-3 user-account-operation text-right clearfix">
-            <p><button type="button" class="btn btn-danger">充值</button></p>
-            <p><button type="button" class="btn btn-info">提现</button></p>
-        </div>
+<div class="side-nav clearfix text-center">
+    <div class="user-infor-column">
+        <a href="user-center.html" class="user-photo"><img src="../../img/banner1.jpg"/></a>
+        <p>Ginoeyes</p>
+        <p><a href="#">退出</a> </p>
     </div>
+    <ul class="nav navbar-nav">
+        <li>
+            <a href="javascript:;"><i class="glyphicon glyphicon-user"></i>我要理财</a>
+        </li>
+        <li class="active">
+            <a href="javascript:;"><i class="glyphicon glyphicon-user"></i>我要借款</a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="glyphicon glyphicon-user"></i>最新动态</a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="glyphicon glyphicon-user"></i>帮助中心</a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="glyphicon glyphicon-user"></i>理财学院</a>
+        </li>
+        <li class="dropdown nav-dropdown">
+            <a href="javascript:;"><i class="glyphicon glyphicon-user"></i>关于我们</a>
+            <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+                <!--<li><a href="#">公司介绍</a></li>-->
+                <!--<li><a href="#">管理团队</a></li>-->
+                <!--<li><a href="#">合作伙伴</a></li>-->
+                <!--<li><a href="#">招贤纳士</a></li>-->
+                <!--<li><a href="#">联系我们</a></li>-->
+            <!--</ul>-->
+        </li>
+    </ul>
 </div>
-<div class="col-lg-15 ept-height"></div>
-<div class="container clearfix">
-    <div class="row user-view">
-        <div class="col-lg-11">
-            <div class="pie-chart-container">
-                <div class="user-pie-show clearfix">
-                    <span class="pie-balance-show">
-                        <em>
-                            可用余额<br/>
-                            <cite>3000.00</cite>
-                        </em>
-                        <i></i>
-                    </span>
-                    <span class="pie-frozen-show">
-                        <i></i>
-                        <em>
-                            冻结资金<br/>
-                            <cite>7000.00</cite>
-                        </em>
-                    </span>
-                </div>
-                <div class="user-pie">
-                    <div class="user-pie-box clearfix">
-                        <a class="pie pie-fund"></a>
-                        <a class="pie pie-frozen"></a>
-                        <a class="pie pie-balance"></a>
-                        <a class="pie pie-payment"></a>
-                        <a class="pie-number text-center">
-                            <table>
-                                <tr><td>资产统计<i class="glyphicon glyphicon-user"></i></td></tr>
-                                <tr><td><b>100000.00</b></td></td></tr>
-                            </table>
-                        </a>
-                    </div>
-                </div>
-                <div class="user-pie-show border-right clearfix">
-                    <span class="pie-payment-show">
-                        <em>
-                            待回款本息<br/>
-                            <cite>90000.00</cite>
-                        </em>
-                        <i></i>
-                    </span>
-                    <span class="pie-fund-show">
-                        <i></i>
-                        <em>
-                            持有货币基金份额<br/>
-                            <cite>1000.00</cite>
-                        </em>
-                    </span>
-                </div>
+<div>
+    <header>
+        <div class="top-nav">
+            <div class="container">
+                <nav class="collapse navbar-collapse main-nav">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="javascript:;"><span class="glyphicon glyphicon-earphone"></span>客服电话:4006-89-406</a>
+                        </li>
+                        <li class="top-nav-pipe">|</li>
+                        <li class="active">
+                            <a href="javascript:;"><span class="glyphicon glyphicon-earphone"></span>移动客户端</a>
+                        </li>
+                        <li class="top-nav-pipe">|</li>
+                        <li>
+                            <a href="javascript:;"><span class="glyphicon glyphicon-earphone"></span>用户体验提升计划</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a target="_blank"  href="javascript:;">用户[退出]</a></li>
+                        <li class="top-nav-pipe">|</li>
+                        <li>
+                            <a href="javascript:;">新手指引</a>
+                        </li>
+                        <li class="top-nav-pipe">|</li>
+                        <li>
+                            <a href="javascript:;">公司动态</a>
+                        </li>
+                        <li class="top-nav-pipe">|</li>
+                        <li><a href="javascript:;">理论论坛</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <div class="col-lg-4">
-            <ul>
-                <li class="text-left">
-                    <p class="glyphicon glyphicon-user"></p>
-                    <p>我的奖励：<i>100.00</i></p>
-                    <p>未生效：<i>20.00</i></p>
-                    <p>可使用：<i>20.00</i></p>
-                    <p>提现卷：<i>0</i>张</p>
-                </li>
-                <li class="text-right">
-                    <p class="glyphicon glyphicon-user"></p>
-                    <p>累计预约<br/><i>0.00</i></p>
-                </li>
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header text-center">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo navbar-brand"  href="javascript:;"></a>
+                    <a class="avatar avatar-sm">
+                        <img class="avatar-img" src="../../img/avatar.jpg">
+                        <em class="mess-count">3</em>
+                    </a>
+                </div>
+                <div id="bs-navbar" class="navbar-collapse collapse">
+                    <a class="navbar-logo navbar-brand float-l"  href="javascript:;"></a>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="javascript:;">我要理财</a>
+                        </li>
+                        <li class="active">
+                            <a href="javascript:;">我要借款</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">最新动态</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">帮助中心</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">理财学院</a>
+                        </li>
+                        <li class="dropdown nav-dropdown">
+                            <a href="javascript:;">关于我们</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">公司介绍</a></li>
+                                <li><a href="#">管理团队</a></li>
+                                <li><a href="#">合作伙伴</a></li>
+                                <li><a href="#">招贤纳士</a></li>
+                                <li><a href="#">联系我们</a></li>
+                            </ul>
+                        </li>
+                        <!--<li>
+                            <span class="dropdown-outer">
+                                <a class="dropdown" href="javascript:;">关于我们</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"><a href="#">Separated link</a></li>
+                                </ul>
+                            </span>
+                        </li>-->
+                        <li class="avatar-outer">
+                            <div class="avatar">
+                                <img class="avatar-img" src="../../img/avatar.jpg">
+                                <em class="mess-count">3</em>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;">我的账户</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-search">
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control">
+                                <span aria-hidden="true" class="glyphicon glyphicon-search form-control-feedback"></span>
+                                <span class="sr-only">(success)</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row user-infor-column">
+            <div class="col-lg-6 user-photo-bar clearfix">
+                <span class="user-photo"><img src="../../img/banner1.jpg"/></span>
+                <ul class="user-infor">
+                    <li class="user-name"><i>Ginoeyes</i><i class="glyphicon glyphicon-heart-empty"></i></li>
+                    <li class="user-icon row">
+                        <a class="col-lg-3 glyphicon glyphicon-user tooltip" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="实名认证"></a>
+                        <div class="tooltip top" role="tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                                Some tooltip text!
+                            </div>
+                        </div>
+                        <a class="col-lg-3 glyphicon glyphicon-user" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="绑定手机"></a>
+                        <a class="col-lg-3 glyphicon glyphicon-user" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="绑定邮箱"></a>
+                        <a class="col-lg-3 glyphicon glyphicon-user" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="提现密码"></a>
+                        <a class="col-lg-3 glyphicon glyphicon-user" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="绑定银行卡"></a>
+
+                    </li>
+                    <li class="user-safe-levels">
+                        <div class="progress-high">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                <span class="sr-only">60% Complete</span>
+                            </div>
+                        </div>
+                        <span class="progress-bar-info"><em>安全等级：</em><i class="levels-high">强</i></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 user-account text-center income-num clearfix"><p>累计收益</p><p>100000.00</p></div>
+            <div class="col-lg-3 user-account text-center balance-num clearfix"><p>可用余额</p><p>3000.00</p></div>
+            <div class="col-lg-3 user-account-operation text-right clearfix">
+                <p><button type="button" class="btn btn-danger">充值</button></p>
+                <p><button type="button" class="btn btn-info">提现</button></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-15 ept-height"></div>
+    <div class="container clearfix">
+        <div class="row user-view">
+            <div class="col-lg-11">
+                <div class="pie-chart-container">
+                    <div class="user-pie-show clearfix">
+                        <span class="pie-balance-show">
+                            <em>
+                                可用余额<br/>
+                                <cite>3000.00</cite>
+                            </em>
+                            <i></i>
+                        </span>
+                        <span class="pie-frozen-show">
+                            <i></i>
+                            <em>
+                                冻结资金<br/>
+                                <cite>7000.00</cite>
+                            </em>
+                        </span>
+                    </div>
+                    <div class="user-pie">
+                        <div class="user-pie-box clearfix">
+                            <a class="pie pie-fund"></a>
+                            <a class="pie pie-frozen"></a>
+                            <a class="pie pie-balance"></a>
+                            <a class="pie pie-payment"></a>
+                            <a class="pie-number text-center">
+                                <table>
+                                    <tr><td>资产统计<i class="glyphicon glyphicon-user"></i></td></tr>
+                                    <tr><td><b>100000.00</b></td></td></tr>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="user-pie-show border-right clearfix">
+                        <span class="pie-payment-show">
+                            <em>
+                                待回款本息<br/>
+                                <cite>90000.00</cite>
+                            </em>
+                            <i></i>
+                        </span>
+                        <span class="pie-fund-show">
+                            <i></i>
+                            <em>
+                                持有货币基金份额<br/>
+                                <cite>1000.00</cite>
+                            </em>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <ul>
+                    <li class="text-left">
+                        <p class="glyphicon glyphicon-user"></p>
+                        <p>我的奖励：<i>100.00</i></p>
+                        <p>未生效：<i>20.00</i></p>
+                        <p>可使用：<i>20.00</i></p>
+                        <p>提现卷：<i>0</i>张</p>
+                    </li>
+                    <li class="text-right">
+                        <p class="glyphicon glyphicon-user"></p>
+                        <p>累计预约<br/><i>0.00</i></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="text-left">
+                        <p class="glyphicon glyphicon-user"></p>
+                        <p>我的转让<br/><i>300.00</i></p>
+                    </li>
+                    <li class="text-right">
+                        <p class="glyphicon glyphicon-user"></p>
+                        <p>我的体验金<br/><i>1000.00</i></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container footer-link">
+            <dl class="col-lg-5 text-left clearfix">
+                <dt><a href="index.htm"><img src="../../img/footer-logo.png"></a> </dt>
+                <dd>
+                    微金所的信念：<br/>
+                    坚持交易所模式，服务小微大众, 不贪大，不比高，<br/>
+                    守得住底线，耐得住寂寞，坚持住理想，<br/>
+                    在鱼龙混杂之初，幸有大浪淘沙去伪存真时，<br/>
+                    微金所屹立，终将成就亿万人的信用价值！
+                </dd>
+                <dd class="text-center">
+                    <em class="glyphicon glyphicon-user"></em>
+                    <em><img src=""></em>
+                    <em><img src=""></em>
+                    <em><img src=""></em>
+                </dd>
+            </dl>
+            <dl class="col-lg-2 clearfix">
+                <dt>关于我们</dt>
+                <dd>
+                    <a href="#">公司介绍</a>
+                    <a href="#">管理团队</a>
+                    <a href="#">合作伙伴</a>
+                    <a href="#">招贤纳士</a>
+                    <a href="#">联系我们</a>
+                </dd>
+            </dl>
+            <dl class="col-lg-2 clearfix">
+                <dt>最新动态</dt>
+                <dd>
+                    <a href="#">媒体报道</a>
+                    <a href="#">公司动态</a>
+                    <a href="#">利率报告</a>
+                    <a href="#">更新历史</a>
+                </dd>
+            </dl>
+            <dl class="col-lg-2 clearfix">
+                <dt>帮助中心</dt>
+                <dd>
+                    <a href="#">新手指引</a>
+                    <a href="#">安全保障</a>
+                    <a href="#">操作指南</a>
+                    <a href="#">VIP投资人</a>
+                </dd>
+            </dl>
+            <dl class="col-lg-4 clearfix">
+                <dt class="text-right"><cite>合作伙伴</cite><i>免费热线4006-89-4006</i></dt>
+                <dd class="footer-link">
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                    <em><img src=""/></em>
+                </dd>
+            </dl>
+        </div>
+        <div class="container footer-copy">
+            <div class="footer-nav col-lg-5">
+                <p>
+                    <a href="#">我要理财</a>
+                    <a href="#">我要借款</a>
+                    <a href="#">忘记密码</a>
+                    <a href="#">如何提现</a>
+                    <a href="#" class="footer-login">登录</a>
+                    <i>/</i>
+                    <a href="#">注册</a>
+                </p>
+                <p>©版权所有 ©中微（北京）信用管理有限公司 京ICP证 12013158号</p>
+            </div>
+            <div class="col-lg-10 footer-safe-img">
+                <em><img src="../../img/img_03.jpg"></em>
+                <em><img src="../../img/img_05.jpg"></em>
+                <em><img src="../../img/img_07.jpg"></em>
+                <em><img src="../../img/img_09.jpg"></em>
+                <em><img src="../../img/img_11.jpg"></em>
+                <em><img src="../../img/img_13.jpg"></em>
+            </div>
+        </div>
+    </footer>
+    <div class="side-service text-center">
+        <a href="#" class="glyphicon glyphicon-apple"></a>
+        <a href="#" class="glyphicon glyphicon-apple side-help">
+            <ul class="text-left">
+                <li class="side-weixin"><i class="text-center glyphicon glyphicon-user"></i>官方微信公众号</li>
+                <li class="side-qq"><i class="text-center glyphicon glyphicon-user"></i>联系在线QQ客服</li>
+                <li class="side-email"><i class="text-center glyphicon glyphicon-user"></i>投诉邮箱：service@weijinsuo.com</li>
+                <li class="side-forum"><i class="text-center glyphicon glyphicon-user"></i>进入理财论坛</li>
+                <li class="side-call"><i class="text-center glyphicon glyphicon-user"></i>免费客服电话：4006-89-4006</li>
+                <li class="side-fix"></li>
             </ul>
+        </a>
+        <a href="#" class="glyphicon glyphicon-apple side-app">
             <ul>
-                <li class="text-left">
-                    <p class="glyphicon glyphicon-user"></p>
-                    <p>我的转让<br/><i>300.00</i></p>
+                <li class="side-weixin">微金所理财APP扫描下载</li>
+                <li class="side-qq"><em>（iOS/Android 通用）</em></li>
+                <li class="side-email">
+                    <img src="../../img/img-weixin.jpg"/>
                 </li>
-                <li class="text-right">
-                    <p class="glyphicon glyphicon-user"></p>
-                    <p>我的体验金<br/><i>1000.00</i></p>
-                </li>
+                <li class="side-fix"></li>
             </ul>
-        </div>
+        </a>
+        <a href="#" class="glyphicon glyphicon-apple"></a>
+        <a href="#" class="glyphicon glyphicon-apple"></a>
     </div>
-</div>
-<footer>
-    <div class="container footer-link">
-        <dl class="col-lg-5 text-left clearfix">
-            <dt><a href="index.htm"><img src="../../img/footer-logo.png"></a> </dt>
-            <dd>
-                微金所的信念：<br/>
-                坚持交易所模式，服务小微大众, 不贪大，不比高，<br/>
-                守得住底线，耐得住寂寞，坚持住理想，<br/>
-                在鱼龙混杂之初，幸有大浪淘沙去伪存真时，<br/>
-                微金所屹立，终将成就亿万人的信用价值！
-            </dd>
-            <dd class="text-center">
-                <em class="glyphicon glyphicon-user"></em>
-                <em><img src=""></em>
-                <em><img src=""></em>
-                <em><img src=""></em>
-            </dd>
-        </dl>
-        <dl class="col-lg-2 clearfix">
-            <dt>关于我们</dt>
-            <dd>
-                <a href="#">公司介绍</a>
-                <a href="#">管理团队</a>
-                <a href="#">合作伙伴</a>
-                <a href="#">招贤纳士</a>
-                <a href="#">联系我们</a>
-            </dd>
-        </dl>
-        <dl class="col-lg-2 clearfix">
-            <dt>最新动态</dt>
-            <dd>
-                <a href="#">媒体报道</a>
-                <a href="#">公司动态</a>
-                <a href="#">利率报告</a>
-                <a href="#">更新历史</a>
-            </dd>
-        </dl>
-        <dl class="col-lg-2 clearfix">
-            <dt>帮助中心</dt>
-            <dd>
-                <a href="#">新手指引</a>
-                <a href="#">安全保障</a>
-                <a href="#">操作指南</a>
-                <a href="#">VIP投资人</a>
-            </dd>
-        </dl>
-        <dl class="col-lg-4 clearfix">
-            <dt class="text-right"><cite>合作伙伴</cite><i>免费热线4006-89-4006</i></dt>
-            <dd class="footer-link">
-                <em><img src=""/></em>
-                <em><img src=""/></em>
-                <em><img src=""/></em>
-                <em><img src=""/></em>
-                <em><img src=""/></em>
-                <em><img src=""/></em>
-                <em><img src=""/></em>
-                <em><img src=""/></em>
-            </dd>
-        </dl>
-    </div>
-    <div class="container footer-copy">
-        <div class="footer-nav col-lg-5">
-            <p>
-                <a href="#">我要理财</a>
-                <a href="#">我要借款</a>
-                <a href="#">忘记密码</a>
-                <a href="#">如何提现</a>
-                <a href="#" class="footer-login">登录</a>
-                <i>/</i>
-                <a href="#">注册</a>
-            </p>
-            <p>©版权所有 ©中微（北京）信用管理有限公司 京ICP证 12013158号</p>
-        </div>
-        <div class="col-lg-10 footer-safe-img">
-            <em><img src="../../img/img_03.jpg"></em>
-            <em><img src="../../img/img_05.jpg"></em>
-            <em><img src="../../img/img_07.jpg"></em>
-            <em><img src="../../img/img_09.jpg"></em>
-            <em><img src="../../img/img_11.jpg"></em>
-            <em><img src="../../img/img_13.jpg"></em>
-        </div>
-    </div>
-</footer>
-<div class="side-service text-center">
-    <a href="#" class="glyphicon glyphicon-apple"></a>
-    <a href="#" class="glyphicon glyphicon-apple"></a>
-    <a href="#" class="glyphicon glyphicon-apple"></a>
-    <a href="#" class="glyphicon glyphicon-apple"></a>
-    <a href="#" class="glyphicon glyphicon-apple"></a>
 </div>
 </body>
 </html>

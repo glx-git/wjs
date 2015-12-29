@@ -12,10 +12,10 @@ ul, ol {
   margin-bottom: 0;
   padding-left:0;
 }
-@media (min-width: 992px) {
-  .container {
-    width: 1186px;
-  }
+li{ list-style: none;}
+
+a ,a:hover {
+  text-decoration:none;
 }
 .form-control {
   height:38px;
@@ -50,4 +50,48 @@ ul, ol {
 }
 .progress {
   margin-bottom:0;
+}
+.float-l {
+  float: $float-l;
+}
+.float-r {
+  float: $float-r;
+}
+
+.margin-t30 {
+  margin-top:30px;
+}
+.marin-b30 {
+  margin-bottom:30px;
+}
+
+
+//media query
+@media screen and (min-width: $screen-sm-min) {
+  .order-mean {
+     display: block;
+   }
+  .video-link,.invest-notice {
+    display: none;
+  }
+}
+@media screen and (min-width: $screen-md-min) {
+  .order-mean {
+    display: inline-block;
+    float: $float-r;
+  }
+  .video-link,.invest-notice {
+    display: none;
+  }
+}
+@media screen and (min-width: $screen-lg-min){
+  .order-mean {
+    display: inline-block;
+  }
+  .invest-notice {
+    display: block;
+  }
+  .container {
+    width: 1186px;
+  }
 }

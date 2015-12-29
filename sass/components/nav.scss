@@ -70,6 +70,7 @@ header a{
   }
   .avatar {
     position: relative;
+    line-height: 43px;
   }
   .avatar-img {
     width:43px;
@@ -122,6 +123,104 @@ header a{
     background-color: #f2f2f2;
   }
 }
-
-
-
+.navbar-header{
+  button.navbar-toggle{
+    float: $float-l;
+    margin-left: 20px;
+  }
+}
+.navbar-header > .navbar-brand{
+  float: none;
+}
+.avatar-sm{
+  float: $float-r;
+  margin-right: 30px;
+}
+@media screen and (min-width: $screen-sm-min) {
+    .navbar-header{
+      width: 100%;
+    }
+    .order-mean {
+      display: block;
+    }
+    .video-link,.invest-notice,.navbar-default .navbar-collapse.collapse{
+      display: none!important;
+    }
+    .navbar-header,.navbar-default .navbar-toggle,.side-nav{
+      display: inline-block;
+    }
+}
+@media screen and (min-width: $screen-md-min) {
+  .navbar-header{
+    width: 100%;
+  }
+    .order-mean {
+      display: inline-block;
+      float: $float-r;
+    }
+    .video-link,.invest-notice,.navbar-default div.navbar-collapse.collapse {
+      display: none !important;
+    }
+    .navbar-header,.navbar-default .navbar-toggle,.side-nav{
+      display: inline-block;
+    }
+}
+@media screen and (min-width: $screen-lg-min) {
+    .order-mean {
+      display: inline-block;
+    }
+    .invest-notice ,.navbar-default div.navbar-collapse.collapse{
+      display: block!important;
+    }
+    .container {
+      width: 1186px;
+    }
+    .navbar-header,.navbar-default .navbar-toggle,.side-nav{
+      display: none;
+    }
+}
+.side-nav{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: $quarter;
+  height: 100%;
+  background: url('#{$icon-path}#{sidenav-bg}.jpg');
+  background-size: 100% 100%;
+  z-index: 10;
+  font-size: $font20;
+  li{
+    width: 80%;
+    margin: 0 10%;
+    border-bottom:$border-base #a0a0a1;
+    a{
+      line-height: 40px;
+      color: $white;
+      opacity: .7;
+      transition: all .3s ease-in-out;
+      &:hover{
+        background: none;
+        opacity: 1;
+      }
+      i{
+        font-size: $font18;
+        color: $white;
+        margin-right: 20px;
+      }
+    }
+  }
+  .user-photo {
+    margin: 50px 0 20px 0;
+    color: $white;
+    &,
+    img {
+      width: 75px;
+      height: 75px;
+      border: $border-base $white;
+      border-radius: $border-radius-largest;
+    }
+  }
+  .user-infor-column p,a{
+    color: $white;
+  }
+}

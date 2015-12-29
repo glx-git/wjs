@@ -1,0 +1,13 @@
+// Progress bars
+@mixin progress-variant($height:$number-base,$martop:$number-base*0.8,$boradius:$number-base,$bgcolor:lighten($gray-base, 92%)) {
+  height:$height;
+  margin-top:$martop;
+  border-radius:$boradius;
+  background-color:$bgcolor;
+  box-shadow: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+@mixin progress-bar-variant($color) {
+  background-color: $color;
+}

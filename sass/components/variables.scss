@@ -52,9 +52,13 @@ $border-radius-base:    2px;
 $border-radius-large:   ceil(($border-radius-base * 2.1)) !default;//5px
 $border-radius-largest: 50%;
 
-//== Components
-//
-//## Define common padding sizes and more..
+//border
+$border-base-width: 1px;
+$border-base-style: solid;
+$border-base : $border-base-width $border-base-style;
+
+// Define common padding sizes and more..
+$number-base:               10px!default;
 
 $padding-base-vertical:     10px !default;
 $padding-base-horizontal:   15px !default;
@@ -71,3 +75,59 @@ $padding-xs-horizontal:     5px !default;
 //img path
 $img-path: false !default;
 $icon-path: if($img-path, "img/", "../img/") !default;
+
+//percent
+$half : 50%;
+$quarter : 25%;
+
+//text-align
+$text-l :left;
+$text-c :center;
+$text-r :right;
+
+//font propetty
+$bold : bold;
+$normal : normal;
+
+//position property
+$absolute : absolute;
+$relative : relative;
+$fixed : fixed;
+
+
+//== Media queries breakpoints
+// Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;

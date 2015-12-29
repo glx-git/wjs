@@ -28,10 +28,22 @@ $side-num: 10px;
       color: $white;
       background-color: $red;
     }
-    span{
+    .side-calculator{
+
+    }
+  }
+  .side-help,.side-app{
+    ul{
       position:absolute;
-      left:-210px;
-      top:-125px;
+      right:$side-num * 6;
+      bottom:-$side-num * 14.7;
+      float: $float-l;
+      width: $side-num * 33.6;
+      padding:$side-num $side-num * 2.3;
+      font-size: $font15;
+      background-color: $dark-blue;
+      border:1px solid #99a3a9;
+      border-radius: $border-radius-base;
       opacity: 0;
       transform: scale(0);
       -webkit-transform: scale(0);
@@ -39,12 +51,69 @@ $side-num: 10px;
       -webkit-transform-origin: 100% 70%;
       transition: transform ease .3s, opacity ease .3s;
       -webkit-transition: all ease .3s;
-      &:hover{
-        display: block;
-        transform: scale(1);
-        -webkit-transform: scale(1);
-        opacity: 1;
+      li{
+        line-height: $line-height-normal;
+        margin: $side-num 0;
+        i{
+          width: $side-num * 3.3;
+          height: $side-num * 3.3;
+          margin-right: $side-num * 1.5;
+          border-radius: $border-radius-largest;
+          font-size: $font20;
+          line-height:$line-height-normal;
+          color: $dark-blue;
+          background-color: $white;
+          vertical-align: middle;
+          transition: all 0.3s ease-out 0s;
+        }
+        &:hover i{
+          color: $white;
+        }
+        &:hover.side-weixin i{
+          background-color: $gree;
+        }
+        &:hover.side-qq i{
+          background-color: $gree;
+        }
+        &:hover.side-email i{
+          background-color: $gree;
+        }
+        &:hover.side-forum i{
+          background-color: $gree;
+        }
+        &:hover.side-call i{
+          background-color: $gree;
+        }
       }
     }
+    li.side-fix{
+      position: absolute;
+      top:$side-num * 8.3;
+      right: -$side-num * 0.8;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      border-top: $side-num * 3 solid transparent;
+      border-bottom: $side-num * 3 solid transparent;
+      border-left: $side-num * 3 solid $dark-blue;
+    }
+    &:hover ul{
+      display: block;
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      opacity: .9;
+    }
+  }
+  .side-help > ul > li{
+        height: $side-num * 4;
+        line-height: $line-height-heightest;
+  }
+  .side-app > ul >li img{
+    padding-bottom:$side-num *1.5;
+  }
+  .side-app > ul > li.side-fix{
+    top:$side-num * 11.9;
   }
 }
